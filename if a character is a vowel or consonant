@@ -1,0 +1,8 @@
+ch = input("Enter a character: ")
+
+if ch.lower() in ['a', 'e', 'i', 'o', 'u']:
+    print("It is a vowel.")
+elif ch.isalpha():
+    print("It is a consonant.")
+else:
+    print("Invalid input! Please enter an alphabet.")
