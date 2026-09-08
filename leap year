@@ -1,0 +1,49 @@
+
+print("LEAP YEAR CHECKER PROGRAM")
+
+
+year=int(input("enter a year:"))
+
+print("\nChecking the year...")
+print("Year entered:", year)
+
+
+if year % 4 == 0:
+
+    print("The year is divisible by 4.")
+
+    
+    if year % 100 == 0:
+
+        print("The year is also divisible by 100.")
+
+        
+        if year % 400 == 0:
+
+            print("The year is divisible by 400.")
+            print("--------------------------------------")
+            print(year, "is a LEAP YEAR.")
+            print("--------------------------------------")
+
+        else:
+
+            print("The year is NOT divisible by 400.")
+            print("--------------------------------------")
+            print(year, "is NOT a leap year.")
+            print("--------------------------------------")
+
+    else:
+
+        print("The year is NOT divisible by 100.")
+        print("--------------------------------------")
+        print(year, "is a LEAP YEAR.")
+        print("--------------------------------------")
+
+else:
+
+    print("The year is NOT divisible by 4.")
+    print("--------------------------------------")
+    print(year, "is NOT a leap year.")
+    print("--------------------------------------")
+
+print("          PROGRAM COMPLETED")
